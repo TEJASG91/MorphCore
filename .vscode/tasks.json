@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "label": "dev",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "check",
+      "label": "check",
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$tsc"]
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "label": "build",
+      "group": "build",
+      "problemMatcher": ["$tsc"]
+    },
+    {
+      "type": "npm",
+      "script": "typecheck",
+      "label": "typecheck",
+      "problemMatcher": ["$tsc"]
+    },
+    { "type": "npm", "script": "lint", "label": "lint", "problemMatcher": [] },
+    { "type": "npm", "script": "format", "label": "format", "problemMatcher": [] }
+  ]
+}

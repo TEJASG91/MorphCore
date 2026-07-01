@@ -1,0 +1,41 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: #05060e;
+  overflow: hidden;
+  font-family: ui-monospace, 'SF Mono', monospace;
+}
+
+#app {
+  position: fixed;
+  inset: 0;
+}
+
+#app canvas {
+  display: block;
+  touch-action: none;
+}
+
+.uploader {
+  position: fixed;
+  bottom: 14px;
+  left: 14px;
+  z-index: 50;
+  font:
+    12px/1 ui-monospace,
+    monospace;
+  color: #9ad;
+}
+
+.uploader label {
+  cursor: pointer;
+  padding: 9px 13px;
+  border-radius: 9px;
+  border: 1px dashed rgba(120, 130, 230, 0.5);
+  background: rgba(8, 10, 20, 0.5);
+}
+
+.uploader label:hover {
+  border-color: #5be1ff;
+}
